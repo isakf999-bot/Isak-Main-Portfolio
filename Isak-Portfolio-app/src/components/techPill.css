@@ -1,0 +1,54 @@
+/* ============================================================
+   TECH PILLS — Visas under varje projekt (React, CSS3, JS osv).
+   Varje teknik har en färgad prick via .tech-pill.<tone>.
+   ============================================================ */
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(137, 210, 255, 0.22);
+  background: rgba(4, 17, 29, 0.92);
+  color: #e6f4ff;
+  font-size: 12px;
+}
+
+.tech-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #8fd7ff;
+}
+
+.tech-pill.html .tech-dot {
+  background: #ff7a28;
+}
+
+.tech-pill.css .tech-dot {
+  background: #4fc3ff;
+}
+
+.tech-pill.scss .tech-dot {
+  background: #d884c1;
+}
+
+.tech-pill.js .tech-dot {
+  background: #ffd166;
+}
+
+.tech-pill.react .tech-dot {
+  background: #7dd3fc;
+}
+
+.tech-pill.figma .tech-dot {
+  background: #f5b1ff;
+}
+
+.tech-pill.git .tech-dot {
+  background: #b8f2ff;
+}
+
+.tech-pill.default .tech-dot {
+  background: #8fd7ff;
+}

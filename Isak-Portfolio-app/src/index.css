@@ -1,0 +1,21 @@
+/* ============================================================
+   GLOBAL BAS — Reset, body-bakgrund och grund-typsnitt.
+   Laddas en gång via main.jsx och gäller hela appen.
+   ============================================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e6f4ff;
+  background:
+    linear-gradient(180deg, rgba(4, 17, 28, 0.74), rgba(4, 17, 28, 0.9)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat fixed;
+}
+
+button,
+input {
+  font-family: inherit;
+}

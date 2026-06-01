@@ -1,0 +1,14 @@
+/* ============================================================
+   FOOTER — Sidfot längst ner, centrerad copyright-text
+   ============================================================ */
+.site-footer {
+  margin-top: auto;
+  padding: 18px 24px 28px;
+  color: #dbeeff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0;
+}

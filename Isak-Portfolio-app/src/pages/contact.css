@@ -1,0 +1,96 @@
+/* ============================================================
+   CONTACT-SIDA — Tre kort: intro, hjälp-lista, kontaktdetaljer
+   ============================================================ */
+.contact-section {
+  margin-top: 20px;
+  padding: 18px 0 8px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-card {
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(7, 27, 45, 0.5);
+  border: 1px solid rgba(137, 210, 255, 0.18);
+  backdrop-filter: blur(10px);
+}
+
+.contact-card.alt {
+  background: rgba(7, 27, 45, 0.56);
+}
+
+.contact-card.details {
+  background: rgba(7, 27, 45, 0.56);
+}
+
+.contact-kicker {
+  margin: 0 0 8px;
+  color: #8fd7ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.contact-copy {
+  margin: 0;
+  color: #eaf7ff;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+/* --- Kontakt-detaljrader (telefon, mail, sociala medier) --- */
+.contact-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(137, 210, 255, 0.12);
+  color: #eaf7ff;
+}
+
+.contact-detail-row:last-child {
+  border-bottom: 0;
+}
+
+.contact-detail-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #8fd7ff;
+  flex-shrink: 0;
+}
+
+.contact-detail-label svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.contact-detail-value {
+  font-size: 15px;
+  width: 40px;
+  width: 100%;
+  text-align: left;
+}
+
+.contact-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #d6ebfb;
+  line-height: 1.8;
+}

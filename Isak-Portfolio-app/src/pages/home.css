@@ -1,0 +1,82 @@
+/* ============================================================
+   HOME-SIDA — Hero, skills-grid och About me-kort
+   ============================================================ */
+
+/* --- Hero: stor rubrik, text och CTA-knappar --- */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 0 24px;
+}
+
+.hero-copy {
+  flex: 1;
+  max-width: 560px;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #f8fdff;
+}
+
+.hero-copy h2 {
+  margin: 8px 0 12px;
+  font-size: 22px;
+  color: #8fd7ff;
+}
+
+.hero-description {
+  margin: 0;
+  line-height: 1.65;
+  color: #d9efff;
+  font-size: 16px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* --- Skills-sektion: topp-marginal + pill-grid --- */
+.skills-section {
+  margin-top: 20px;
+  padding: 18px 0 8px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* --- About me: stort kort med presentationstext --- */
+.about-me-card {
+  margin-top: 18px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(7, 27, 45, 0.42);
+  border: 1px solid rgba(137, 210, 255, 0.18);
+  backdrop-filter: blur(10px);
+  margin-top: 50px;
+}
+
+.about-me-copy {
+  margin: 8px 0 0;
+  color: #eaf7ff;
+  line-height: 1.85;
+  max-width: 900px;
+  font-size: 16px;
+}
+
+/* --- Responsivt: hero i en kolumn --- */
+@media (max-width: 900px) {
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
