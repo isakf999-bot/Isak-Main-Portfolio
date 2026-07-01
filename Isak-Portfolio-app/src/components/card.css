@@ -2,6 +2,7 @@
    PROJEKTKORT (Card) — Själva kortet i Portfolio-griden
    ============================================================ */
 .project-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, rgba(7, 27, 45, 0.96), rgba(9, 32, 50, 0.94));

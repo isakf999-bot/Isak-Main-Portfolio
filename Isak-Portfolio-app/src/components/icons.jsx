@@ -60,6 +60,16 @@ export function JsIcon() {
   );
 }
 
+// --- TypeScript-ikon ---
+export function TsIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" style={{ color: "#3178C6" }}>
+      <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" />
+      <text x="12" y="15" textAnchor="middle" fontSize="8" fontWeight="800" fontFamily="Arial, sans-serif" fill="#fff">TS</text>
+    </svg>
+  );
+}
+
 // --- Figma-ikon ---
 export function FigmaIcon() {
   return (
