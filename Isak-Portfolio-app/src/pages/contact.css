@@ -4,11 +4,12 @@
 .contact-section {
   margin-top: 20px;
   padding: 18px 0 8px;
+  animation: fade-in-up 0.5s ease-out both;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
 }
 
@@ -18,6 +19,28 @@
   background: rgba(7, 27, 45, 0.5);
   border: 1px solid rgba(137, 210, 255, 0.18);
   backdrop-filter: blur(10px);
+  box-shadow: 0 16px 36px rgba(2, 10, 18, 0.24);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(137, 210, 255, 0.32);
+  box-shadow: 0 22px 44px rgba(2, 10, 18, 0.34);
+}
+
+.contact-card.form-card {
+  background: none;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 24px 0 0;
+}
+
+.contact-card.form-card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .contact-card.alt {

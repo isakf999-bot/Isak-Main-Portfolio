@@ -1,12 +1,27 @@
 // ============================================================
-// FOOTER — Enkel sidfot längst ner på sidan med copyright-text.
+// FOOTER — Sidfot med sociala ikoner och copyright-text.
 // ============================================================
+import { InstagramIcon, FacebookIcon, TwitterIcon, GitHubIcon } from "./icons";
 import "./footer.css";
 
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <p>© 2026 Isak Forsberg. </p>
+      <div className="footer-socials">
+        <a href="https://github.com/isakf999-bot" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <GitHubIcon />
+        </a>
+        <a href="https://instagram.com/isakforsberg11" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <InstagramIcon />
+        </a>
+        <a href="https://www.facebook.com/isak.forsberg.31" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <FacebookIcon />
+        </a>
+        <a href="https://x.com/FoppaCS" target="_blank" rel="noreferrer" aria-label="Twitter / X">
+          <TwitterIcon />
+        </a>
+      </div>
+      <p>© 2026 Isak Forsberg.</p>
     </footer>
   );
 }

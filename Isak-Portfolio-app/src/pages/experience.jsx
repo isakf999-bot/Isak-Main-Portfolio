@@ -1,6 +1,8 @@
 // ============================================================
-// EXPERIENCE-SIDA — Två info-kort: utbildning och arbetsfokus.
+// EXPERIENCE-SIDA — Två kolumner: Education till vänster,
+// Work till höger, varsin vertikal tidslinje.
 // ============================================================
+import { GraduationCapIcon, BriefcaseIcon } from "../components/icons";
 import "./experience.css";
 
 export default function Experience() {
@@ -13,46 +15,78 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="experience-grid">
-        <article className="info-card">
-          <p className="eyebrow">Education</p>
-          <h3>Sunds Gårdens Folkhögskola</h3>
-          <p className="info-meta">Front End Developer</p>
-          <p className="info-meta">2026-01-12 - 2026-06-05</p>
-          <p className="info-copy">
-            Focused on HTML, CSS, JavaScript, React, SCSS, Figma, responsive design, user experience and collaborative web development.
-          </p>
-        </article>
+      <div className="experience-columns">
+        {/* ------ Education (vänster) ------ */}
+        <div className="experience-column">
+          <div className="experience-column-header">
+            <span className="experience-column-icon">
+              <GraduationCapIcon />
+            </span>
+            <h3>Education</h3>
+          </div>
 
-        <article className="info-card">
-          <p className="eyebrow">Work focus</p>
-          <h3>Summer temp at Strafe.com</h3>
-          <p className="info-meta">Front End Developer</p>
-          <p className="info-meta">2026-06-01 - 2026-07-01</p>
-          <p className="info-copy">
-            Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
-          </p>
-        </article>
+          <div className="timeline">
+            <article className="timeline-item">
+              <span className="timeline-marker" aria-hidden="true" />
+              <div className="timeline-content">
+                <p className="timeline-date">2026-01-12 - 2026-06-05</p>
+                <h4>Sunds Gårdens Folkhögskola</h4>
+                <p className="timeline-role">Front End Developer</p>
+                <p className="timeline-copy">
+                  Focused on HTML, CSS, JavaScript, React, SCSS, Figma, responsive design, user experience and collaborative web development.
+                </p>
+              </div>
+            </article>
 
-        <article className="info-card">
-          <p className="eyebrow">Education</p>
-          <h3>Sunds Gårdens Folkhögskola</h3>
-          <p className="info-meta">Back End Developer</p>
-          <p className="info-meta">2026-08-17 - 2026-12-17</p>
-          <p className="info-copy">
-            Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
-          </p>
-        </article>
+            <article className="timeline-item">
+              <span className="timeline-marker" aria-hidden="true" />
+              <div className="timeline-content">
+                <p className="timeline-date">2026-08-17 - 2026-12-18</p>
+                <h4>Sunds Gårdens Folkhögskola</h4>
+                <p className="timeline-role">Back End Developer</p>
+                <p className="timeline-copy">
+                  Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
 
-        <article className="info-card">
-          <p className="eyebrow">Work focus</p>
-          <h3>Front end developer at Strafe.com</h3>
-          <p className="info-meta">Front End Developer</p>
-          <p className="info-meta">2026-08-01 - 2027-01-01</p>
-          <p className="info-copy">
-            Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
-          </p>
-        </article>
+        {/* ------ Work (höger) ------ */}
+        <div className="experience-column">
+          <div className="experience-column-header">
+            <span className="experience-column-icon">
+              <BriefcaseIcon />
+            </span>
+            <h3>Work</h3>
+          </div>
+
+          <div className="timeline">
+            <article className="timeline-item">
+              <span className="timeline-marker" aria-hidden="true" />
+              <div className="timeline-content">
+                <p className="timeline-date">2026-06-01 - 2026-07-01</p>
+                <h4>Summer temp at Strafe.com</h4>
+                <p className="timeline-role">Front End Developer</p>
+                <p className="timeline-copy">
+                  Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
+                </p>
+              </div>
+            </article>
+
+            <article className="timeline-item">
+              <span className="timeline-marker" aria-hidden="true" />
+              <div className="timeline-content">
+                <p className="timeline-date">2026-08-01 - 2027-01-01</p>
+                <h4>Front end developer at Strafe.com</h4>
+                <p className="timeline-role">Front End Developer</p>
+                <p className="timeline-copy">
+                  Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
   );

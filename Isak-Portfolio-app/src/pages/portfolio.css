@@ -4,6 +4,7 @@
 .portfolio-section {
   margin-top: 20px;
   padding: 18px 0 8px;
+  animation: fade-in-up 0.5s ease-out both;
 }
 
 /* --- Sökruta och hjälptext ovanför griden --- */
@@ -29,6 +30,17 @@
   border: 1px solid rgba(137, 210, 255, 0.24);
   background: rgba(4, 17, 29, 0.9);
   color: #f7fbff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(214, 235, 251, 0.45);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: rgba(65, 214, 255, 0.6);
+  box-shadow: 0 0 0 3px rgba(41, 184, 255, 0.16);
 }
 
 /* --- Grid med projektkort --- */

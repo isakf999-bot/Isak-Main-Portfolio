@@ -1,45 +1,143 @@
 /* ============================================================
-   EXPERIENCE-SIDA — Två info-kort (utbildning + fokus)
+   EXPERIENCE-SIDA — Två kolumner (Education / Work), varsin
+   vertikal tidslinje med datum, roll och beskrivning.
    ============================================================ */
 .experience-section {
   margin-top: 20px;
   padding: 18px 0 8px;
+  animation: fade-in-up 0.5s ease-out both;
 }
 
-.experience-grid {
+.experience-columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 48px;
 }
 
-.info-card {
-  padding: 20px;
-  border-radius: 18px;
-  background: linear-gradient(180deg, rgba(7, 27, 45, 0.96), rgba(9, 29, 50, 0.94));
+/* --- Kolumn-rubrik: ikon-badge + "Education"/"Work" --- */
+.experience-column-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 26px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(137, 210, 255, 0.14);
+}
+
+.experience-column-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: rgba(41, 184, 255, 0.12);
+  border: 1px solid rgba(65, 214, 255, 0.3);
+  color: #6fd4ff;
+}
+
+.experience-column-icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+.experience-column-header h3 {
+  margin: 0;
+  color: #f8fdff;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+/* --- Tidslinje: vertikal linje som binder ihop punkterna --- */
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 30px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  bottom: -16px;
+  width: 1.5px;
+  background: rgba(137, 210, 255, 0.16);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #29b8ff, #41d6ff);
+  box-shadow: 0 0 0 4px rgba(41, 184, 255, 0.14);
+}
+
+.timeline-content {
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(7, 27, 45, 0.94), rgba(9, 29, 50, 0.9));
   border: 1px solid rgba(137, 210, 255, 0.18);
+  box-shadow: 0 14px 30px rgba(2, 10, 18, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.info-card h3 {
+.timeline-content:hover {
+  transform: translateY(-3px);
+  border-color: rgba(137, 210, 255, 0.34);
+  box-shadow: 0 18px 36px rgba(2, 10, 18, 0.32);
+}
+
+.timeline-date {
   margin: 0 0 8px;
-  color: #ffffff;
-}
-
-.info-meta {
-  margin: 0 0 6px;
   color: #8fd7ff;
-  font-size: 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
 }
 
-.info-copy {
-  margin: 10px 0 0;
+.timeline-content h4 {
+  margin: 0 0 4px;
+  color: #ffffff;
+  font-size: 16.5px;
+  font-weight: 700;
+}
+
+.timeline-role {
+  margin: 0 0 10px;
+  color: #9fc3dd;
+  font-size: 13.5px;
+}
+
+.timeline-copy {
+  margin: 0;
   color: #d6ebfb;
   line-height: 1.6;
+  font-size: 14.5px;
 }
 
-/* --- Responsivt: korten i en kolumn --- */
+/* --- Responsivt: Education ovanför Work, i en kolumn --- */
 @media (max-width: 900px) {
-  .experience-grid {
-    display: grid;
+  .experience-columns {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 }

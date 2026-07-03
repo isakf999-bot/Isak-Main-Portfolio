@@ -4,27 +4,77 @@
 
 /* --- Hero: stor rubrik, text och CTA-knappar --- */
 .hero-section {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  padding: 16px 0 24px;
+  padding: 32px 0 36px;
+}
+
+/* --- Mjuk blå glow-blobb bakom hero-texten --- */
+.hero-glow {
+  position: absolute;
+  top: -140px;
+  right: -60px;
+  width: 380px;
+  height: 380px;
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(41, 184, 255, 0.4) 0%, transparent 65%);
+  filter: blur(50px);
 }
 
 .hero-copy {
   flex: 1;
   max-width: 560px;
+  animation: fade-in-up 0.5s ease-out both;
+}
+
+.availability-pill {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 22px;
+  padding: 6px 12px 6px 10px;
+  border-radius: 999px;
+  background: rgba(41, 184, 255, 0.1);
+  border: 1px solid rgba(65, 214, 255, 0.3);
+  color: #bdeaff;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.availability-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ee08a;
+  box-shadow: 0 0 0 0 rgba(78, 224, 138, 0.6);
+  animation: pulse-dot 2s ease-out infinite;
 }
 
 .hero-copy h1 {
   margin: 0;
-  font-size: 40px;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
   color: #f8fdff;
 }
 
+.hero-name {
+  background: linear-gradient(90deg, #29b8ff, #7fe6ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .hero-copy h2 {
-  margin: 8px 0 12px;
-  font-size: 22px;
+  margin: 8px 0 14px;
+  font-size: 20px;
+  font-weight: 500;
   color: #8fd7ff;
 }
 
@@ -33,18 +83,20 @@
   line-height: 1.65;
   color: #d9efff;
   font-size: 16px;
+  max-width: 480px;
 }
 
 .hero-actions {
   display: flex;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 /* --- Skills-sektion: topp-marginal + pill-grid --- */
 .skills-section {
   margin-top: 20px;
   padding: 18px 0 8px;
+  animation: fade-in-up 0.5s ease-out 0.1s both;
 }
 
 .skills-grid {
@@ -55,13 +107,13 @@
 
 /* --- About me: stort kort med presentationstext --- */
 .about-me-card {
-  margin-top: 18px;
-  padding: 24px;
+  margin-top: 50px;
+  padding: 26px;
   border-radius: 20px;
   background: rgba(7, 27, 45, 0.42);
   border: 1px solid rgba(137, 210, 255, 0.18);
+  box-shadow: 0 20px 45px rgba(2, 10, 18, 0.3);
   backdrop-filter: blur(10px);
-  margin-top: 50px;
 }
 
 .about-me-copy {

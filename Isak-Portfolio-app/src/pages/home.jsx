@@ -12,10 +12,16 @@ export default function Home({ setPage }) {
     <>
       {/* ------ Hero-sektion (rubrik + knappar) ------ */}
       <section className="hero-section">
+        <div className="hero-glow" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow">Front End Developer</p>
-          <h1>Hello, I'm Isak</h1>
-          <h2> And i am Front End Developer</h2>
+          <p className="availability-pill">
+            <span className="availability-dot" />
+            Available for new projects
+          </p>
+          <h1>
+            Hello, I'm <span className="hero-name">Isak</span>
+          </h1>
+          <h2>And i am Front End Developer</h2>
           <p className="hero-description">
             I create modern, clean and responsive web experiences with a strong focus on design, usability and performance.
           </p>
@@ -23,6 +29,7 @@ export default function Home({ setPage }) {
           <div className="hero-actions">
             <button className="primary-btn" onClick={() => setPage("portfolio")}>
               View projects
+              <span className="btn-arrow" aria-hidden="true">→</span>
             </button>
             <button className="secondary-btn" onClick={() => setPage("experience")}>
               View experience

@@ -1,18 +1,19 @@
 // ============================================================
-// NAV (Header) — Toppmenyn med brand-text och navigeringsknappar.
+// NAV (Header) — Toppmenyn med logotyp och navigeringsknappar.
 // Tar emot:
 //   page    = vilken sida som är aktiv (markerar rätt knapp)
 //   setPage = funktion för att byta sida
+// Loggan är klickbar (går till Home) och snurrar ett varv vid hover.
 // ============================================================
+import { LogoMark } from "./icons";
 import "./nav.css";
 
 export default function Navbar({ page, setPage }) {
   return (
     <header className="site-header">
-      <div>
-        <p className="brand-name">Isak Forsberg</p>
-        <p className="brand-tag">Front End Developer</p>
-      </div>
+      <button className="brand-mark" onClick={() => setPage("home")} aria-label="Go to home">
+        <LogoMark />
+      </button>
 
       <nav className="nav-links">
         <button

@@ -12,6 +12,12 @@
   background: rgba(4, 17, 29, 0.92);
   color: #e6f4ff;
   font-size: 12px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.tech-pill:hover {
+  border-color: rgba(137, 210, 255, 0.45);
+  transform: translateY(-1px);
 }
 
 .tech-dot {

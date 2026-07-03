@@ -4,25 +4,33 @@
 .skill-badge {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 14px;
+  gap: 11px;
+  padding: 11px 17px;
   border-radius: 999px;
   background: rgba(5, 24, 39, 0.92);
   border: 1px solid rgba(129, 204, 255, 0.24);
   color: #dff5ff;
-  font-size: 14px;
+  font-size: 14.5px;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.skill-badge:hover {
+  border-color: rgba(143, 215, 255, 0.5);
+  background: rgba(41, 184, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .skill-icon {
   display: inline-flex;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
 }
 
 .skill-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   fill: currentColor;
 }

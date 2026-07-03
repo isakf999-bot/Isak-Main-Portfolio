@@ -26,24 +26,41 @@
    som återkommer på flera sidor.
    ============================================================ */
 .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   margin: 0 0 8px;
   color: #8ed8ff;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   font-size: 12px;
+  font-weight: 600;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #29b8ff, #41d6ff);
+  box-shadow: 0 0 8px rgba(65, 214, 255, 0.7);
 }
 
 .section-title-row {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(137, 210, 255, 0.14);
 }
 
 .section-title-row h2 {
   margin: 0;
   color: #f8fdff;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
 }
 
 /* ============================================================
@@ -52,9 +69,13 @@
    ============================================================ */
 .primary-btn,
 .secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   border-radius: 999px;
-  padding: 10px 16px;
+  padding: 11px 18px;
   border: 1px solid transparent;
+  font-size: 14.5px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -69,21 +90,32 @@
 
 .primary-btn:hover,
 .secondary-btn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .primary-btn:hover {
-  box-shadow: 0 12px 28px rgba(41, 184, 255, 0.24);
+  box-shadow: 0 14px 30px rgba(41, 184, 255, 0.3);
+}
+
+.primary-btn .btn-arrow {
+  transition: transform 0.2s ease;
+}
+
+.primary-btn:hover .btn-arrow {
+  transform: translateX(3px);
 }
 
 .secondary-btn {
-  background: transparent;
+  background: rgba(133, 198, 255, 0.06);
   border-color: rgba(133, 198, 255, 0.35);
   color: #e6f4ff;
+  font-weight: 600;
   box-shadow: 0 8px 20px rgba(65, 214, 255, 0.08);
 }
 
 .secondary-btn:hover {
+  border-color: rgba(143, 215, 255, 0.6);
+  background: rgba(133, 198, 255, 0.12);
   box-shadow: 0 12px 28px rgba(65, 214, 255, 0.18);
 }
 
@@ -92,11 +124,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 16px;
+  padding: 11px 18px;
   border-radius: 999px;
   background: linear-gradient(90deg, #29b8ff, #41d6ff);
   color: #03131f;
   text-decoration: none;
   font-weight: 700;
+  font-size: 14.5px;
   box-shadow: 0 8px 24px rgba(41, 184, 255, 0.14);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(41, 184, 255, 0.3);
 }

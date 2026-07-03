@@ -109,9 +109,6 @@ export default function Contact({ setPage }) {
 
       <article className="contact-card form-card">
         <p className="contact-kicker">Send me a message</p>
-        <p className="contact-copy">
-          Fill in your Gmail and a short message — it opens a ready-made email to me.
-        </p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <label className="form-field">
             <span>Your Gmail</span>

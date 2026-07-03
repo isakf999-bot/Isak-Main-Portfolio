@@ -1,14 +1,47 @@
 /* ============================================================
-   FOOTER — Sidfot längst ner, centrerad copyright-text
+   FOOTER — Sidfot längst ner, sociala ikoner + copyright-text
    ============================================================ */
 .site-footer {
   margin-top: auto;
-  padding: 18px 24px 28px;
-  color: #dbeeff;
+  padding: 28px 24px 28px;
+  border-top: 1px solid rgba(137, 210, 255, 0.12);
+  color: #9fc3dd;
   text-align: center;
-  font-size: 14px;
+  font-size: 13.5px;
 }
 
 .site-footer p {
   margin: 0;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(137, 210, 255, 0.2);
+  color: #8fd7ff;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-socials a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-socials a:hover {
+  color: #ffffff;
+  background: rgba(41, 184, 255, 0.14);
+  border-color: rgba(65, 214, 255, 0.5);
+  transform: translateY(-2px);
 }
