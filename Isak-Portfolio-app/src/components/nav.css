@@ -95,15 +95,44 @@
   box-shadow: 0 6px 16px rgba(41, 184, 255, 0.25);
 }
 
-/* --- Responsivt: stapla brand och meny under varandra --- */
-@media (max-width: 900px) {
+/* --- Responsivt: centrera loggan över en centrerad pill-meny --- */
+@media (max-width: 640px) {
   .nav-inner {
     flex-direction: column;
-    align-items: start;
-    gap: 12px;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
   }
 
+  /* Loggan ligger centrerad överst istället för ensam i hörnet */
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-mark svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Pill-menyn tar full bredd och centreras, jämnt fördelade knappar */
   .nav-links {
+    width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .nav-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+/* --- Extra smalt: knapparna får dela på bredden i ett jämnt rutnät --- */
+@media (max-width: 380px) {
+  .nav-button {
+    padding: 8px 12px;
+    font-size: 13.5px;
   }
 }

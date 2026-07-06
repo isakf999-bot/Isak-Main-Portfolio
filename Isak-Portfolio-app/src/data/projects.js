@@ -11,7 +11,7 @@
 //   screenshot  = bilden som visas på själva kortet
 //   tech        = vilka tekniker som visas som pills
 //   techTone    = färg på varje tech-pill (matchar nycklarna i tech)
-//   images      = 5 bilder + texter som visas inuti popupen
+//   images      = bilder + texter som visas inuti popupen
 //                 { src: importerad bild eller null, caption: "text under bilden" }
 // ============================================================
 import netflixImage from "../assets/netflix.png";
@@ -25,18 +25,27 @@ import ecommerceCartImage from "../assets/ecommerce-cart.png";
 import ecommerceCheckoutImage from "../assets/ecommerce-checkout.png";
 import ecommercePaymentImage from "../assets/ecommerce-payment.png";
 import ecommerceConfirmedImage from "../assets/ecommerce-confirmed.png";
-import translateImage from "../assets/translate.png";
-import typinggameImage from "../assets/typinggame.png";
-import genesisImage from "../assets/genesis.png";
-import bookingImage from "../assets/booking.png";
-import githubImage from "../assets/github.png";
-import guesswordImage from "../assets/guessword.png";
-import plannerImage from "../assets/planner.png";
-import planner2Image from "../assets/planner2.png";
-import planner3Image from "../assets/planner3.png";
-import planner4Image from "../assets/planner4.png";
-import planner5Image from "../assets/planner5.png";
-import planner6Image from "../assets/planner6.png";
+import translate1Image from "../assets/translate-1.png";
+import translate2Image from "../assets/translate-2.png";
+import translate3Image from "../assets/translate-3.png";
+import github1Image from "../assets/github-1.png";
+import github2Image from "../assets/github-2.png";
+import github3Image from "../assets/github-3.png";
+import guessword1Image from "../assets/guessword-1.png";
+import planner1Image from "../assets/planner-1.png";
+import planner2Image from "../assets/planner-2.png";
+import planner3Image from "../assets/planner-3.png";
+import planner4Image from "../assets/planner-4.png";
+import planner5Image from "../assets/planner-5.png";
+import planner6Image from "../assets/planner-6.png";
+import typinggame1Image from "../assets/typinggame-1.png";
+import typinggame2Image from "../assets/typinggame-2.png";
+import genesis1Image from "../assets/genesis-1.png";
+import genesis2Image from "../assets/genesis-2.png";
+import genesis3Image from "../assets/genesis-3.png";
+import booking1Image from "../assets/booking-1.png";
+import booking2Image from "../assets/booking-2.png";
+import booking3Image from "../assets/booking-3.png";
 
 export const projects = [
   {
@@ -75,11 +84,13 @@ export const projects = [
     repo: "https://github.com/isakf999-bot/E-Commerce-Clothing",
     liveSite: "https://e-commerce-clothing-sable.vercel.app/",
     screenshot: ecommerceHomeImage,
-    tech: ["React", "TypeScript", "Tailwind"],
+    tech: ["React", "TypeScript", "Tailwind", "CSS3", "HTML5"],
     techTone: {
       React: "react",
       TypeScript: "ts",
       Tailwind: "tailwind",
+      CSS3: "css",
+      HTML5: "html",
     },
     images: [
       { src: ecommerceHomeImage, caption: "Homepage hero with the new season's essentials." },
@@ -99,7 +110,7 @@ export const projects = [
     focus: "React, CSS and JavaScript, API integration",
     repo: "https://github.com/isakf999-bot/Translate.app",
     liveSite: "https://translate-app-l4e1.vercel.app/",
-    screenshot: translateImage,
+    screenshot: translate1Image,
     tech: ["React", "CSS3", "JavaScript", "HTML5"],
     techTone: {
       React: "react",
@@ -108,9 +119,9 @@ export const projects = [
       HTML5: "html",
     },
     images: [
-      { src: translateImage, caption: "Main page of the translate app." },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
+      { src: translate1Image, caption: "Translating English to French in real time." },
+      { src: translate2Image, caption: "Swap languages instantly with the toggle button." },
+      { src: translate3Image, caption: "Translating to Spanish with instant results." },
       { src: null, caption: "" },
       { src: null, caption: "" },
       { src: null, caption: "" },
@@ -125,7 +136,7 @@ export const projects = [
     focus: "Making clean  responsivegithub profile searcher with react.",
     repo: "https://github.com/isakf999-bot/GithubProfile.search",
     liveSite: "https://github-profile-search-cyan.vercel.app/",
-    screenshot: githubImage,
+    screenshot: github1Image,
     tech: ["React", "CSS3", "JavaScript", "HTML5"],
     techTone: {
       React: "react",
@@ -134,9 +145,9 @@ export const projects = [
       HTML5: "html",
     },
     images: [
-      { src: githubImage, caption: "Main search view for GitHub profiles." },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
+      { src: github1Image, caption: "Landing page with search bar and feature highlights." },
+      { src: github2Image, caption: "Profile view showing followers, repos and location." },
+      { src: github3Image, caption: "Repository list with language, stars and forks." },
       { src: null, caption: "" },
       { src: null, caption: "" },
     ],
@@ -150,7 +161,7 @@ export const projects = [
     focus: "Javascript game development, timer countdown, score system, working with Ai to generate dynamic content and working more effectively.",
     repo: "https://github.com/isakf999-bot/GuessWord.game",
     liveSite: "https://guess-word-game-three.vercel.app/",
-    screenshot: guesswordImage,
+    screenshot: guessword1Image,
     tech: ["React", "CSS3", "JavaScript", "HTML5"],
     techTone: {
       React: "react",
@@ -159,7 +170,7 @@ export const projects = [
       HTML5: "html",
     },
     images: [
-      { src: guesswordImage, caption: "Main view of the Guess the Word game." },
+      { src: guessword1Image, caption: "Unscramble the letters and fill in your guess one letter at a time." },
       { src: null, caption: "" },
       { src: null, caption: "" },
       { src: null, caption: "" },
@@ -175,7 +186,7 @@ export const projects = [
     focus: "React, UI design and working effectively with AI.",
     repo: "https://github.com/isakf999-bot/ProjectPlanner.app",
     liveSite: "https://project-planner-app-gamma.vercel.app/",
-    screenshot: plannerImage,
+    screenshot: planner1Image,
     tech: ["React", "JavaScript", "CSS3", "HTML5"],
     techTone: {
       React: "react",
@@ -184,12 +195,12 @@ export const projects = [
       CSS3: "css",
     },
     images: [
-      { src: plannerImage, caption: "Login page." },
-      { src: planner2Image, caption: "Project view." },
-      { src: planner3Image, caption: "Choosing project." },
-      { src: planner4Image, caption: "Picking project name." },
-      { src: planner5Image, caption: "Picking project framework." },
-      { src: planner6Image, caption: "Planning your project." },
+      { src: planner1Image, caption: "Login screen for the Plannr app." },
+      { src: planner2Image, caption: "Dashboard once logged in, ready to create a new project." },
+      { src: planner3Image, caption: "Choosing between a framework project or a basic HTML/CSS/JS project." },
+      { src: planner4Image, caption: "CLI-style wizard for picking framework, variant and project type." },
+      { src: planner5Image, caption: "Project workspace with file tree, notes and color palette." },
+      { src: planner6Image, caption: "Picking a Google Font for the project with live preview." },
     ],
   },
   {
@@ -201,7 +212,7 @@ export const projects = [
     focus: "Javascript game development, timer countdown, score system",
     repo: "https://github.com/isakf999-bot/TypingGame.JS",
     liveSite: "https://typing-game-js.vercel.app/",
-    screenshot: typinggameImage,
+    screenshot: typinggame1Image,
     tech: ["HTML5", "CSS3", "JavaScript"],
     techTone: {
       HTML5: "html",
@@ -209,8 +220,8 @@ export const projects = [
       JavaScript: "js",
     },
     images: [
-      { src: typinggameImage, caption: "Main view of the typing game." },
-      { src: null, caption: "" },
+      { src: typinggame1Image, caption: "Prompted to type a word before the timer runs out." },
+      { src: typinggame2Image, caption: "Typing the word live in the input field." },
       { src: null, caption: "" },
       { src: null, caption: "" },
       { src: null, caption: "" },
@@ -225,7 +236,7 @@ export const projects = [
     focus: "Designing clean websites with handcoded HTMLand CSS focusing on grid system.",
     repo: "https://github.com/isakf999-bot/Genesis.Assignment",
     liveSite: "https://genesiswebsiteisak.netlify.app/",
-    screenshot: genesisImage,
+    screenshot: genesis1Image,
     tech: ["HTML5", "CSS3", "SCSS", "Figma"],
     techTone: {
       HTML5: "html",
@@ -234,9 +245,9 @@ export const projects = [
       Figma: "figma",
     },
     images: [
-      { src: genesisImage, caption: "Landing page of the Genesis site." },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
+      { src: genesis1Image, caption: "Landing page hero with intro and featured projects." },
+      { src: genesis2Image, caption: "Project grid showcasing design work." },
+      { src: genesis3Image, caption: "Contact section with a simple form." },
       { src: null, caption: "" },
       { src: null, caption: "" },
     ],
@@ -250,7 +261,7 @@ export const projects = [
     focus: "Designing clean websites with handcoded HTML and CSS focusing on design.",
     repo: "https://github.com/isakf999-bot/Website.Test",
     liveSite: "https://website-test-chi-blush.vercel.app/",
-    screenshot: bookingImage,
+    screenshot: booking1Image,
     tech: ["CSS3", "SCSS", "Figma", "HTML5"],
     techTone: {
       HTML5: "html",
@@ -259,9 +270,9 @@ export const projects = [
       Figma: "figma",
     },
     images: [
-      { src: bookingImage, caption: "Landing page of the booking site." },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
+      { src: booking1Image, caption: "Hero section with search bar for travel destinations." },
+      { src: booking2Image, caption: "Why choose us section with feature highlights." },
+      { src: booking3Image, caption: "Booking steps and featured property listings." },
       { src: null, caption: "" },
       { src: null, caption: "" },
     ],

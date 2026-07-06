@@ -191,3 +191,20 @@
   cursor: not-allowed;
   transform: none;
 }
+
+/* --- Responsivt: korten staplas fullbredd, ett efter ett --- */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .contact-card {
+    padding: 22px;
+  }
+
+  /* Formuläret får ta full bredd på mobil (ingen 520px-begränsning) */
+  .form-card {
+    max-width: 100%;
+  }
+}

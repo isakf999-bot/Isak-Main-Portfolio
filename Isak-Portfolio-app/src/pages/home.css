@@ -163,3 +163,26 @@
     gap: 18px;
   }
 }
+
+@media (max-width: 640px) {
+  /* Glow-blobben får inte sticka ut och skapa horisontell scroll */
+  .hero-glow {
+    right: 0;
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-copy h1 {
+    font-size: 38px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .hero-actions .primary-btn,
+  .hero-actions .secondary-btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}

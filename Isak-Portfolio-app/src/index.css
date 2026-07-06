@@ -14,6 +14,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  /* Skydd mot horisontell scroll på mobil — inget innehåll ska
+     kunna dra sidan i sidled, bara vertikal scroll tillåts. */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: var(--font-body);
