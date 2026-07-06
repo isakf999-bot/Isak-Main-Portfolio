@@ -56,6 +56,30 @@
   animation: pulse-dot 2s ease-out infinite;
 }
 
+.availability-pill.unavailable {
+  background: rgba(255, 82, 82, 0.1);
+  border-color: rgba(255, 108, 108, 0.35);
+  color: #ffc7c7;
+}
+
+.availability-pill.unavailable .availability-dot {
+  background: #ff5c5c;
+  box-shadow: 0 0 0 0 rgba(255, 92, 92, 0.6);
+  animation: pulse-dot-red 2s ease-out infinite;
+}
+
+@keyframes pulse-dot-red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 92, 92, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(255, 92, 92, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 92, 92, 0);
+  }
+}
+
 .hero-copy h1 {
   margin: 0;
   font-size: 44px;
@@ -114,6 +138,13 @@
   border: 1px solid rgba(137, 210, 255, 0.18);
   box-shadow: 0 20px 45px rgba(2, 10, 18, 0.3);
   backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.about-me-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(137, 210, 255, 0.34);
+  box-shadow: 0 26px 52px rgba(2, 10, 18, 0.4);
 }
 
 .about-me-copy {

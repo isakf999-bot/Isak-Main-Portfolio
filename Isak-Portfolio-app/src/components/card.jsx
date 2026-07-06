@@ -1,7 +1,9 @@
 // ============================================================
 // PROJEKTKORT (Card) — Ett kort i Portfolio-griden. Klickas för
-// att öppna popup (ProjectModal). GitHub-knappen stoppar klick-
-// propagering så den inte öppnar popupen.
+// att öppna popup (ProjectModal). Snabbknappen stoppar klick-
+// propagering så den inte öppnar popupen: visar "Visit site" om
+// projektet har en liveSite, annars "GitHub" som fallback. Båda
+// länkarna finns alltid kvar inne i popupen oavsett.
 // ============================================================
 import TechPill from "./techPill";
 import "./card.css";
@@ -13,6 +15,10 @@ export default function ProjectCard({ project, onOpen }) {
       onOpen(project);
     }
   };
+
+  const hasLiveSite = Boolean(project.liveSite);
+  const quickLinkHref = hasLiveSite ? project.liveSite : project.repo;
+  const quickLinkLabel = hasLiveSite ? "Visit site" : "GitHub";
 
   return (
     <article
@@ -41,13 +47,13 @@ export default function ProjectCard({ project, onOpen }) {
             <h3>{project.title}</h3>
           </div>
           <a
-            href={project.repo}
+            href={quickLinkHref}
             target="_blank"
             rel="noreferrer"
             className="repo-link"
             onClick={(e) => e.stopPropagation()}
           >
-            GitHub
+            {quickLinkLabel}
           </a>
         </div>
 

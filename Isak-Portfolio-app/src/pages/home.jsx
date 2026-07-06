@@ -14,9 +14,9 @@ export default function Home({ setPage }) {
       <section className="hero-section">
         <div className="hero-glow" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="availability-pill">
+          <p className="availability-pill unavailable">
             <span className="availability-dot" />
-            Available for new projects
+            Not available for new projects
           </p>
           <h1>
             Hello, I'm <span className="hero-name">Isak</span>

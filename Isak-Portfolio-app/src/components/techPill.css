@@ -47,6 +47,14 @@
   background: #7dd3fc;
 }
 
+.tech-pill.ts .tech-dot {
+  background: #3178c6;
+}
+
+.tech-pill.tailwind .tech-dot {
+  background: #38bdf8;
+}
+
 .tech-pill.figma .tech-dot {
   background: #f5b1ff;
 }

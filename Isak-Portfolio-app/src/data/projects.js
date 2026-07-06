@@ -14,7 +14,17 @@
 //   images      = 5 bilder + texter som visas inuti popupen
 //                 { src: importerad bild eller null, caption: "text under bilden" }
 // ============================================================
-import heroImage from "../assets/hero.png";
+import netflixImage from "../assets/netflix.png";
+import netflixDetailImage from "../assets/netflix-detail.png";
+import netflixPlayerImage from "../assets/netflix-player.png";
+import netflixSearchImage from "../assets/netflix-search.png";
+import netflixLightImage from "../assets/netflix-light.png";
+import ecommerceHomeImage from "../assets/ecommerce-home.png";
+import ecommerceClothesImage from "../assets/ecommerce-clothes.png";
+import ecommerceCartImage from "../assets/ecommerce-cart.png";
+import ecommerceCheckoutImage from "../assets/ecommerce-checkout.png";
+import ecommercePaymentImage from "../assets/ecommerce-payment.png";
+import ecommerceConfirmedImage from "../assets/ecommerce-confirmed.png";
 import translateImage from "../assets/translate.png";
 import typinggameImage from "../assets/typinggame.png";
 import genesisImage from "../assets/genesis.png";
@@ -30,6 +40,57 @@ import planner6Image from "../assets/planner6.png";
 
 export const projects = [
   {
+    id: 0,
+    title: "Netflix Inspired Trailer website",
+    description:
+      "A Netflix-inspired streaming platform concept called LUMA, with a full-width featured-title hero banner, a trending movies carousel and a clean dark UI built to feel like a real streaming service.",
+    type: "AI-assisted",
+    focus: "React, TypeScript and CSS, streaming platform UI/UX",
+    repo: "https://github.com/isakf999-bot/Netflix-Inspired-website",
+    liveSite: "https://netflix-inspired-website.vercel.app/",
+    screenshot: netflixImage,
+    tech: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3"],
+    techTone: {
+      React: "react",
+      TypeScript: "ts",
+      JavaScript: "js",
+      HTML5: "html",
+      CSS3: "css",
+    },
+    images: [
+      { src: netflixImage, caption: "LUMA homepage with featured trailer and trending row." },
+      { src: netflixDetailImage, caption: "Movie detail view with synopsis, cast and genres." },
+      { src: netflixPlayerImage, caption: "Trailer playing inline, without leaving the page." },
+      { src: netflixSearchImage, caption: "Live search with instant results." },
+      { src: netflixLightImage, caption: "Light mode, toggled from the same header button." },
+    ],
+  },
+  {
+    id: 12,
+    title: "E-Commerce Clothing",
+    description:
+      "A modern e-commerce clothing store with a full shopping flow: browsing by category, product pages with sizing, a live cart drawer and a multi-step checkout with shipping, payment and review.",
+    type: "AI-assisted",
+    focus: "React, TypeScript and Tailwind CSS, full shopping cart and checkout flow",
+    repo: "https://github.com/isakf999-bot/E-Commerce-Clothing",
+    liveSite: "https://e-commerce-clothing-sable.vercel.app/",
+    screenshot: ecommerceHomeImage,
+    tech: ["React", "TypeScript", "Tailwind"],
+    techTone: {
+      React: "react",
+      TypeScript: "ts",
+      Tailwind: "tailwind",
+    },
+    images: [
+      { src: ecommerceHomeImage, caption: "Homepage hero with the new season's essentials." },
+      { src: ecommerceClothesImage, caption: "Category browsing with filters and live pricing." },
+      { src: ecommerceCartImage, caption: "Live cart drawer with subtotal and free-shipping progress." },
+      { src: ecommerceCheckoutImage, caption: "Checkout step 1: shipping details and order summary." },
+      { src: ecommercePaymentImage, caption: "Checkout step 2: payment (safe demo card, no real charges)." },
+      { src: ecommerceConfirmedImage, caption: "Order confirmed, with order number and shipping summary." },
+    ],
+  },
+  {
     id: 1,
     title: "Translate Website",
     description:
@@ -37,7 +98,7 @@ export const projects = [
     type: "AI-assisted",
     focus: "React, CSS and JavaScript, API integration",
     repo: "https://github.com/isakf999-bot/Translate.app",
-    liveSite: "",
+    liveSite: "https://translate-app-l4e1.vercel.app/",
     screenshot: translateImage,
     tech: ["React", "CSS3", "JavaScript", "HTML5"],
     techTone: {
@@ -63,7 +124,7 @@ export const projects = [
     type: "AI-assisted",
     focus: "Making clean  responsivegithub profile searcher with react.",
     repo: "https://github.com/isakf999-bot/GithubProfile.search",
-    liveSite: "",
+    liveSite: "https://github-profile-search-cyan.vercel.app/",
     screenshot: githubImage,
     tech: ["React", "CSS3", "JavaScript", "HTML5"],
     techTone: {
@@ -88,7 +149,7 @@ export const projects = [
     type: "AI-assisted",
     focus: "Javascript game development, timer countdown, score system, working with Ai to generate dynamic content and working more effectively.",
     repo: "https://github.com/isakf999-bot/GuessWord.game",
-    liveSite: "",
+    liveSite: "https://guess-word-game-three.vercel.app/",
     screenshot: guesswordImage,
     tech: ["React", "CSS3", "JavaScript", "HTML5"],
     techTone: {
@@ -113,7 +174,7 @@ export const projects = [
     type: "AI-assisted",
     focus: "React, UI design and working effectively with AI.",
     repo: "https://github.com/isakf999-bot/ProjectPlanner.app",
-    liveSite: "",
+    liveSite: "https://project-planner-app-gamma.vercel.app/",
     screenshot: plannerImage,
     tech: ["React", "JavaScript", "CSS3", "HTML5"],
     techTone: {
@@ -132,106 +193,6 @@ export const projects = [
     ],
   },
   {
-    id: 5,
-    title: "AI UI Concept Board",
-    description:
-      "A React-based concept page with modular cards, accent colors and a clean information architecture inspired by design systems.",
-    type: "AI-assisted",
-    focus: "Design systems and layout",
-    repo: "https://github.com/",
-    liveSite: "",
-    screenshot: heroImage,
-    tech: ["React", "Figma", "GitHub", "JavaScript"],
-    techTone: {
-      React: "react",
-      Figma: "figma",
-      GitHub: "git",
-      JavaScript: "js",
-    },
-    images: [
-      { src: heroImage, caption: "Concept board overview." },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-    ],
-  },
-  {
-    id: 6,
-    title: "AI Workflow Demo",
-    description:
-      "A product-focused dashboard prototype with polished components, responsive behavior and a clear visual story.",
-    type: "AI-assisted",
-    focus: "Dashboard and product flows",
-    repo: "https://github.com/",
-    liveSite: "",
-    screenshot: heroImage,
-    tech: ["React", "JavaScript", "GitHub", "Figma"],
-    techTone: {
-      React: "react",
-      JavaScript: "js",
-      GitHub: "git",
-      Figma: "figma",
-    },
-    images: [
-      { src: heroImage, caption: "Dashboard prototype overview." },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-    ],
-  },
-  {
-    id: 7,
-    title: "Handcoded UI Concept",
-    description:
-      "A modern, handcoded UI concept with a focus on clean code, responsive design and a strong visual hierarchy.",
-    type: "Handcoded",
-    focus: "Clean code and design",
-    repo: "https://github.com/",
-    liveSite: "",
-    screenshot: heroImage,
-    tech: ["HTML5", "CSS3", "SCSS", "JavaScript"],
-    techTone: {
-      HTML5: "html",
-      CSS3: "css",
-      SCSS: "scss",
-      JavaScript: "js",
-    },
-    images: [
-      { src: heroImage, caption: "UI concept overview." },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-    ],
-  },
-  {
-    id: 8,
-    title: "Handcoded Dashboard",
-    description:
-      "A responsive dashboard layout with handcoded components, clear information hierarchy and a focus on usability.",
-    type: "Handcoded",
-    focus: "Dashboard design and code",
-    repo: "https://github.com/",
-    liveSite: "",
-    screenshot: heroImage,
-    tech: ["HTML5", "CSS3", "SCSS", "JavaScript"],
-    techTone: {
-      HTML5: "html",
-      CSS3: "css",
-      SCSS: "scss",
-      JavaScript: "js",
-    },
-    images: [
-      { src: heroImage, caption: "Dashboard overview." },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-      { src: null, caption: "" },
-    ],
-  },
-  {
     id: 9,
     title: "Typing game",
     description:
@@ -239,7 +200,7 @@ export const projects = [
     type: "Handcoded",
     focus: "Javascript game development, timer countdown, score system",
     repo: "https://github.com/isakf999-bot/TypingGame.JS",
-    liveSite: "",
+    liveSite: "https://typing-game-js.vercel.app/",
     screenshot: typinggameImage,
     tech: ["HTML5", "CSS3", "JavaScript"],
     techTone: {
@@ -288,7 +249,7 @@ export const projects = [
     type: "Handcoded",
     focus: "Designing clean websites with handcoded HTML and CSS focusing on design.",
     repo: "https://github.com/isakf999-bot/Website.Test",
-    liveSite: "",
+    liveSite: "https://website-test-chi-blush.vercel.app/",
     screenshot: bookingImage,
     tech: ["CSS3", "SCSS", "Figma", "HTML5"],
     techTone: {

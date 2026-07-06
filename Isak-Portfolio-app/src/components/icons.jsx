@@ -10,18 +10,29 @@
 // kontaktsätt, och exportera dem så de kan importeras där de behövs.
 // ============================================================
 
-// --- Logotyp-mark ("IF") — geometriskt monogram i navbaren/favicon ---
+// --- Logotyp-mark (nod/atom-symbol) — i navbaren/favicon ---
 export function LogoMark() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path
-        d="M5 5 L5 19 M12 5 L12 19 M12 5 L19 5 M12 11.5 L17.5 11.5"
+      <circle
+        cx="12"
+        cy="12"
+        r="7.3"
         fill="none"
         stroke="#04121d"
-        strokeWidth="3.2"
+        strokeWidth="1.5"
         strokeLinecap="round"
-        strokeLinejoin="round"
+        strokeDasharray="38 9.5"
+        transform="rotate(-20 12 12)"
       />
+      <line x1="12" y1="12" x2="12" y2="5.8" stroke="#04121d" strokeWidth="1.4" strokeLinecap="round" />
+      <line x1="12" y1="12" x2="17.3" y2="15.7" stroke="#04121d" strokeWidth="1.4" strokeLinecap="round" />
+      <line x1="12" y1="12" x2="6.7" y2="15.7" stroke="#04121d" strokeWidth="1.4" strokeLinecap="round" />
+      <circle cx="12" cy="5.8" r="1.7" fill="#04121d" />
+      <circle cx="17.3" cy="15.7" r="1.7" fill="#04121d" />
+      <circle cx="6.7" cy="15.7" r="1.7" fill="#04121d" />
+      <circle cx="12" cy="12" r="2.4" fill="none" stroke="#04121d" strokeWidth="1.1" />
+      <circle cx="12" cy="12" r="0.9" fill="#04121d" />
     </svg>
   );
 }
@@ -132,6 +143,22 @@ export function TsIcon() {
       >
         TS
       </text>
+    </svg>
+  );
+}
+
+// --- Tailwind CSS-ikon --- (officiella "vind"-loggan)
+export function TailwindIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" style={{ color: "#38BDF8" }}>
+      <path
+        fill="currentColor"
+        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624
+           C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624
+           C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624
+           c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624
+           C10.337,13.382,8.976,12,6.001,12z"
+      />
     </svg>
   );
 }

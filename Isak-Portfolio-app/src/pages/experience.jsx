@@ -45,7 +45,7 @@ export default function Experience() {
                 <h4>Sunds Gårdens Folkhögskola</h4>
                 <p className="timeline-role">Back End Developer</p>
                 <p className="timeline-copy">
-                  Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
+                  Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work with branches and pull requests . I also got to see how a company works with their website and how they prioritize different tasks.
                 </p>
               </div>
             </article>
@@ -69,20 +69,15 @@ export default function Experience() {
                 <h4>Summer temp at Strafe.com</h4>
                 <p className="timeline-role">Front End Developer</p>
                 <p className="timeline-copy">
-                  Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
+                  Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work with branches and pull requests . I also got to see how a company works with their website and how they prioritize different tasks.
                 </p>
               </div>
             </article>
 
             <article className="timeline-item">
               <span className="timeline-marker" aria-hidden="true" />
-              <div className="timeline-content">
-                <p className="timeline-date">2026-08-01 - 2027-01-01</p>
-                <h4>Front end developer at Strafe.com</h4>
-                <p className="timeline-role">Front End Developer</p>
-                <p className="timeline-copy">
-                  Worked to help them fix bugs, add new features and improve the user experience on their website. I learned how to work in a company environment, worked with one developer and got experience on how to work view branches, pull requests and code reviews. I also got to see how a company works with their website and how they prioritize different tasks.
-                </p>
+              <div className="timeline-content coming-soon">
+                <p className="coming-soon-text">Coming soon...</p>
               </div>
             </article>
           </div>
