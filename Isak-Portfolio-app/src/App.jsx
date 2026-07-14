@@ -8,6 +8,7 @@
 // ============================================================
 import { useState } from "react";
 import "./App.css";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Navbar from "./components/nav";
 import Footer from "./components/footer";
@@ -40,6 +41,9 @@ export default function App() {
 
       {/* ====== FOOTER ====== */}
       <Footer />
+
+      {/* ====== VERCEL SPEED INSIGHTS ====== */}
+      <SpeedInsights />
     </div>
   );
 }
