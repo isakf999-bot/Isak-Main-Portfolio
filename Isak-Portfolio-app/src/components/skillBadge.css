@@ -2,15 +2,18 @@
    SKILL BADGE — Pill-formade badges med ikoner (Home)
    ============================================================ */
 .skill-badge {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 11px;
+  width: 100%;
   padding: 11px 17px;
   border-radius: 999px;
   background: rgba(5, 24, 39, 0.92);
   border: 1px solid rgba(129, 204, 255, 0.24);
   color: #dff5ff;
   font-size: 14.5px;
+  white-space: nowrap;
   transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
 }
 

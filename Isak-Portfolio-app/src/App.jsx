@@ -7,6 +7,8 @@
 // (pages/). Layouten är: Navbar -> aktuell sida -> popup -> Footer.
 // ============================================================
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
 
 import Navbar from "./components/nav";
@@ -40,6 +42,10 @@ export default function App() {
 
       {/* ====== FOOTER ====== */}
       <Footer />
+
+      {/* ====== VERCEL — Besöksstatistik + prestandamätning ====== */}
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 }

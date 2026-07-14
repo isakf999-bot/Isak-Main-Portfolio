@@ -68,6 +68,8 @@
 .project-body {
   flex: 1;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-header {
@@ -121,4 +123,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  /* Fäster tech-pillsen längst ner på kortet oavsett hur lång
+     beskrivningen är, så de linjerar mellan alla kort i griden. */
+  margin-top: auto;
+  padding-top: 4px;
 }

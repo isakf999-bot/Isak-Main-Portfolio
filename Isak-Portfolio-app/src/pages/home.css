@@ -123,10 +123,19 @@
   animation: fade-in-up 0.5s ease-out 0.1s both;
 }
 
+/* Rutnät med LIKA breda celler — varje badge blir exakt lika stor
+   oavsett hur långt namnet är. auto-fill + 1fr ger samma spårbredd
+   på alla rader, så inget hoppar i storlek. */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
   gap: 12px;
+}
+
+@media (max-width: 520px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* --- About me: stort kort med presentationstext --- */

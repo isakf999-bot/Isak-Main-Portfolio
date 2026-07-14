@@ -21,7 +21,7 @@ export default function Home({ setPage }) {
           <h1>
             Hello, I'm <span className="hero-name">Isak</span>
           </h1>
-          <h2>And i am Front End Developer</h2>
+          <h2>And i am a Front End Developer</h2>
           <p className="hero-description">
             I create modern, clean and responsive web experiences with a strong focus on design, usability and performance.
           </p>
