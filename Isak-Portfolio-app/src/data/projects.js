@@ -25,6 +25,12 @@ import ecommerceCartImage from "../assets/ecommerce-cart.png";
 import ecommerceCheckoutImage from "../assets/ecommerce-checkout.png";
 import ecommercePaymentImage from "../assets/ecommerce-payment.png";
 import ecommerceConfirmedImage from "../assets/ecommerce-confirmed.png";
+import landingpage1Image from "../assets/landingpage-1.png";
+import landingpage2Image from "../assets/landingpage-2.png";
+import landingpage3Image from "../assets/landingpage-3.png";
+import landingpage4Image from "../assets/landingpage-4.png";
+import landingpage5Image from "../assets/landingpage-5.png";
+import landingpage6Image from "../assets/landingpage-6.png";
 import translate1Image from "../assets/translate-1.png";
 import translate2Image from "../assets/translate-2.png";
 import translate3Image from "../assets/translate-3.png";
@@ -99,6 +105,31 @@ export const projects = [
       { src: ecommerceCheckoutImage, caption: "Checkout step 1: shipping details and order summary." },
       { src: ecommercePaymentImage, caption: "Checkout step 2: payment (safe demo card, no real charges)." },
       { src: ecommerceConfirmedImage, caption: "Order confirmed, with order number and shipping summary." },
+    ],
+  },
+  {
+    id: 13,
+    title: "Landing Page for a SaaS Analytics Platform",
+    description:
+      "A dark, conversion-focused landing page for Nebula, a fictional real-time analytics platform. Built with a hover dropdown in the navbar, a live product dashboard mockup, a bento feature grid, testimonials and a pricing section with a monthly/annual toggle.",
+    type: "AI-assisted",
+    focus: "HTML, CSS and TypeScript, SaaS marketing page design",
+    repo: "https://github.com/isakf999-bot/Landingpage.Portfolio",
+    liveSite: "https://landingpage-portfolio-orpin.vercel.app/",
+    screenshot: landingpage1Image,
+    tech: ["TypeScript", "HTML5", "CSS3"],
+    techTone: {
+      TypeScript: "ts",
+      HTML5: "html",
+      CSS3: "css",
+    },
+    images: [
+      { src: landingpage1Image, caption: "Hero section with the main value proposition and call to action." },
+      { src: landingpage2Image, caption: "Product dropdown opening straight from the navbar on hover." },
+      { src: landingpage3Image, caption: "Live dashboard mockup with metrics, charts and trusted-by logos." },
+      { src: landingpage4Image, caption: "Bento feature grid covering forecasting, anomalies and pipelines." },
+      { src: landingpage5Image, caption: "Testimonials from data teams as social proof." },
+      { src: landingpage6Image, caption: "Pricing with three tiers and a monthly/annual toggle." },
     ],
   },
   {
