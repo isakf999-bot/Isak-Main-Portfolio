@@ -1,7 +1,7 @@
 // ============================================================
 // FOOTER — Sidfot med sociala ikoner och copyright-text.
 // ============================================================
-import { InstagramIcon, FacebookIcon, TwitterIcon, GitHubIcon } from "./icons";
+import { InstagramIcon, LinkedInIcon, TwitterIcon, GitHubIcon } from "./icons";
 import "./footer.css";
 
 export default function Footer() {
@@ -14,8 +14,8 @@ export default function Footer() {
         <a href="https://instagram.com/isakforsberg11" target="_blank" rel="noreferrer" aria-label="Instagram">
           <InstagramIcon />
         </a>
-        <a href="https://www.facebook.com/isak.forsberg.31" target="_blank" rel="noreferrer" aria-label="Facebook">
-          <FacebookIcon />
+        <a href="https://www.linkedin.com/in/isakforsberg05" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <LinkedInIcon />
         </a>
         <a href="https://x.com/FoppaCS" target="_blank" rel="noreferrer" aria-label="Twitter / X">
           <TwitterIcon />

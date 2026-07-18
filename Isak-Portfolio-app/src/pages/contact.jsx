@@ -11,7 +11,7 @@ import {
   PhoneIcon,
   EmailIcon,
   InstagramIcon,
-  FacebookIcon,
+  LinkedInIcon,
   TwitterIcon,
 } from "../components/icons";
 import "./contact.css";
@@ -101,7 +101,7 @@ export default function Contact({ setPage }) {
             <span className="contact-detail-value">FoppaCS</span>
           </div>
           <div className="contact-detail-row">
-            <span className="contact-detail-label"><FacebookIcon /></span>
+            <span className="contact-detail-label"><LinkedInIcon /></span>
             <span className="contact-detail-value">Isak Forsberg</span>
           </div>
         </article>

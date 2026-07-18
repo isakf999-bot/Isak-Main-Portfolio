@@ -21,7 +21,7 @@ export default function Home({ setPage }) {
           <h1>
             Hello, I'm <span className="hero-name">Isak</span>
           </h1>
-          <h2>And i am a Front End Developer</h2>
+          <h2>And I am a Front End Developer</h2>
           <p className="hero-description">
             I create modern, clean and responsive web experiences with a strong focus on design, usability and performance.
           </p>
@@ -56,7 +56,7 @@ export default function Home({ setPage }) {
         <div className="about-me-card">
           <p className="eyebrow">About me</p>
           <p className="about-me-copy">
-            I’m Isak Forsberg, a 20 year old front-end developer from Sweden, focused on building modern, responsive websites with clean visuals, smooth interactions and a strong design sensibility.
+            I’m Isak Forsberg, a 21 year old front-end developer from Sweden, focused on building modern, responsive websites with clean visuals, smooth interactions and a strong design sensibility.
             I enjoy turning ideas into polished web experiences using React, JavaScript, HTML, CSS and Figma. I am currently building my portfolio and looking for opportunities to collaborate on projects that value thoughtful design and clean code.
             I am taking a course on backend development to expand my skillset and better understand the full web development process and become an fullstack developer in the future.
 

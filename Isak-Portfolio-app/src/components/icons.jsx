@@ -3,7 +3,7 @@
 //
 //   Tech-ikoner   : HTML, CSS, SCSS, JS, Figma, React, GitHub, VS Code
 //                   (visas i skill-badges på Home + tech-pills i kort)
-//   Kontakt-ikoner: telefon, mail, Instagram, Facebook, Twitter/X
+//   Kontakt-ikoner: telefon, mail, Instagram, LinkedIn, Twitter/X
 //                   (visas i kontaktkortet på Contact-sidan)
 //
 // Lägg till nya ikoner här om du vill ha fler tekniker eller
@@ -262,11 +262,11 @@ export function InstagramIcon() {
   );
 }
 
-// --- Facebook-ikon ---
-export function FacebookIcon() {
+// --- LinkedIn-ikon ---
+export function LinkedInIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" role="img" aria-label="Facebook">
-      <path fill="currentColor" d="M13.5 20v-6.5h2.3l.3-2.7h-2.6V9.6c0-.8.2-1.3 1.3-1.3h1.4V5.8c-.2 0-1.1-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.7v2.1H8v2.7h2.3V20h3.2Z" />
+    <svg viewBox="0 0 24 24" aria-hidden="true" role="img" aria-label="LinkedIn">
+      <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.73v20.53C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.73C24 .78 23.2 0 22.22 0z" />
     </svg>
   );
 }
